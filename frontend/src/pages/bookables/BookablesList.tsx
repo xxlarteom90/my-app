@@ -1,18 +1,12 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { bookables } from "../../static.json";
 import { Button } from "react-bootstrap";
 
 export function BookablesList() {
   const group = "Rooms";
   const bookablesInGroup = bookables.filter((b) => b.group === group);
-  // const [bookableIndex, setBookableIndex] = useState(1);
+  const [bookableIndex, setBookableIndex] = useState(1);
 
-  let bookableIndex = 1;
-
-  function changeBookable(selectedIndex: number) {
-    bookableIndex = selectedIndex;
-    console.log(bookableIndex);
-  }
 
   return (
     <ul className="bookables items-list-nav">
@@ -22,7 +16,7 @@ export function BookablesList() {
             key={b.id}
             className={i === bookableIndex ? "selected" : undefined}
           >
-            <Button className="p-2" onClick={() => changeBookable(i)}>
+            <Button className="p-2" onClick={() => setBookableIndex(i)}>
               {b.title}
             </Button>
           </li>
