@@ -3,6 +3,7 @@ export function UserPicker() {
     <div>
       <select>
         <option>Users</option>
+        <option>Kit</option>
       </select>
     </div>
   );
