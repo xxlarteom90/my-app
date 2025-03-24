@@ -32,8 +32,22 @@
       "sessions": [0, 1, 2, 3, 4, 5],
       "days": [0, 1, 2, 3, 4, 5, 6]
     },
-    { "id": 4, "group": "Kit", "title": "Projector" },
-    { "id": 5, "group": "Kit", "title": "Wireless mics" }
+    {
+      "id": 4,
+      "group": "Kit",
+      "title": "Projector",
+      "notes": "Portable but powerful. Keep it with case",
+      "sessions": [0, 1, 2, 3, 4],
+      "days": [0, 1, 2, 3, 4]
+    },
+    {
+      "id": 5,
+      "group": "Kit",
+      "title": "Wireless mics",
+      "notes": "Portable but powerful. Keep it with case",
+      "sessions": [0, 1, 2, 3, 4],
+      "days": [0, 1, 2, 3, 4]
+    }
   ],
   "users": [],
   "bookings": [],
