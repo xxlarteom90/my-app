@@ -2,7 +2,7 @@ import { Navbar } from "react-bootstrap";
 // import { QuestionCard } from "./components/QuestionCard";
 import { Outlet } from "react-router";
 import { Link } from "react-router-dom";
-import { UserPicker } from "./components/users/UserPicker";
+// import { UserPicker } from "./components/users/UserPicker";
 // import { QuestionCard } from "./components/QuestionCard";
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
                 <span>Users</span>
               </Link>
 
-              <UserPicker />
+              {/* <UserPicker /> */}
             </li>
           </ul>
         </nav>
