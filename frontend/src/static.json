@@ -49,7 +49,36 @@
       "days": [0, 1, 2, 3, 4]
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "id": 0,
+      "group": "Users",
+      "name": "Mark",
+      "title": "IT Programmer student",
+      "notes": "description of IT programming"
+    },
+    {
+      "id": 1,
+      "group": "Users",
+      "name": "Simon",
+      "title": "IT  student",
+      "notes": " of IT programming"
+    },
+    {
+      "id": 2,
+      "group": "Users",
+      "name": "Clarisse",
+      "title": "IT Programmer ",
+      "notes": "description of IT "
+    },
+    {
+      "id": 3,
+      "group": "Users",
+      "name": "Sanjiv",
+      "title": "Advocate",
+      "notes": "description of advocate"
+    }
+  ],
   "bookings": [],
   "sessions": ["Breakfast", "Morning", "Lunch", "Afternoon", "Evening"],
 

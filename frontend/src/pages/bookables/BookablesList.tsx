@@ -15,6 +15,12 @@ export function BookablesList() {
 
   const [hasDetails, setHasDetails] = useState(false);
 
+
+  // function changeGroup(event){
+  //   setGroup(event.target.value);
+  //   setBookableIndex(0)
+  // }
+
   function nextBookable() {
     setBookableIndex((i) => (i + 1) % bookablesInGroup.length);
   }
