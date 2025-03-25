@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, SetStateAction, useState } from "react";
 import { bookables, days, sessions } from "../../static.json";
 import { Button } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
@@ -16,10 +16,10 @@ export function BookablesList() {
   const [hasDetails, setHasDetails] = useState(false);
 
 
-  // function changeGroup(event){
-  //   setGroup(event.target.value);
-  //   setBookableIndex(0)
-  // }
+  function changeGroup(event: { target: { value: SetStateAction<string>; }; }){
+    setGroup(event.target.value);
+    setBookableIndex(0)
+  }
 
   function nextBookable() {
     setBookableIndex((i) => (i + 1) % bookablesInGroup.length);
@@ -29,6 +29,11 @@ export function BookablesList() {
 
   return (
     <Fragment>
+      <select
+      value={group} onChange={changeGroup}>
+        {groups.map(g => <option value={g} key={g}>{g}</option>)}
+      </select>
+
       <div className="container gap-2">
       {bookable && (
         <div className="row align-items-end">
