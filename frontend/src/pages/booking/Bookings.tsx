@@ -1,6 +1,8 @@
 // import { Button } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 
+import { WeekPicker } from "../../components/bookings/WeekPicker";
+
 // type Action =
 //   | { type: "add"; payload: number }
 //   | { type: "sub"; payload: number }
@@ -12,12 +14,12 @@ export function Bookings() {
   // let count = 0;
 
   // function reducer(state: number, action: Action) {
-    // if (action.type === "inc") {
-    //   return state + 1;
-    // }
-    // if (action.type === "dec") {
-    //   return state - 1;
-    // }
+  // if (action.type === "inc") {
+  //   return state + 1;
+  // }
+  // if (action.type === "dec") {
+  //   return state - 1;
+  // }
   //   if (action.type === "add") {
   //     return state + action.payload;
   //   }
@@ -31,27 +33,27 @@ export function Bookings() {
   //   return state;
   // }
 
-//   count = reducer(count, {type: "add", payload: 3})
-//         count = reducer(count, {type: "sub", payload: 10})
-//         count = reducer(count, {type: "set", payload: 41})
-//         count = reducer(count, {type: "set", payload: 44})
-//         count = reducer(count, {type: "inc"})
-//         count = reducer(count, {type: "dec"})
-//         count = reducer(count, {type: "dec"})
-// console.log(count)
+  //   count = reducer(count, {type: "add", payload: 3})
+  //         count = reducer(count, {type: "sub", payload: 10})
+  //         count = reducer(count, {type: "set", payload: 41})
+  //         count = reducer(count, {type: "set", payload: 44})
+  //         count = reducer(count, {type: "inc"})
+  //         count = reducer(count, {type: "dec"})
+  //         count = reducer(count, {type: "dec"})
+  // console.log(count)
 
   return (
     <header>
-      <li>
-        <span className="mx-4">
-          {/* {count} */}
+      <span className="mx-5">
+        <p>Bookings!</p>
+        <WeekPicker date={new Date()} />
+        {/* {count} */}
         {/* {count = reducer(count, {type: "add", payload: 3})}
         {count = reducer(count, {type: "sub", payload: 10})}
         {count = reducer(count, {type: "set", payload: 41})}
         {count = reducer(count, {type: "inc"})} */}
-        </span>
-        {/* <Link to="bookings"> Bookings</Link> */}
-      </li>
+      </span>
+      {/* <Link to="bookings"> Bookings</Link> */}
     </header>
   );
 }
