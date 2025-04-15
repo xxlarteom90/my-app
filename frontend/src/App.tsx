@@ -39,6 +39,14 @@ function App() {
               <Link to="/users" className="btn btn-header">
                 <span>Users</span>
               </Link>
+              <Link to="/sayHello" className="btn btn-header">
+                <span>SayHello</span>
+              </Link>
+
+              <Link to="/windowsSize" className="btn btn-header">
+                <span>WindowSizeHello</span>
+              </Link>
+              
 
               {/* <UserPicker /> */}
             </li>
