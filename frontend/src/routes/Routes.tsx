@@ -9,7 +9,7 @@ import { BookablesPage } from "../pages/bookables/BookablesPage";
 import { UsersPage } from "../pages/users/UsersPage";
 import { SayHello } from "../pages/helloPage/SayHello";
 import { WindowSizeHello } from "../pages/helloPage/WindowSizeHello";
-// import { UserPicker } from "../components/users/UserPicker";
+import { UserPicker } from "../components/users/UserPicker";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
       { path: "/users", element: <UsersPage /> },
       { path: "/sayHello", element: <SayHello /> },
       { path: "/windowsSize", element: <WindowSizeHello /> },
-      // {path: "/userPicker", element: <UserPicker/>}
+      {path: "/userPicker", element: <UserPicker/>}
 
     ],
   },
