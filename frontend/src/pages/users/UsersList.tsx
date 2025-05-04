@@ -1,5 +1,7 @@
 import { useState } from "react"
-import {users} from "../../static.json"
+// import {users} from "../../static.json"
+import {users} from "../../db.json"
+
 import { Button } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 

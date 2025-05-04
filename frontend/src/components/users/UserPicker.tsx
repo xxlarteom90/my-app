@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
-// import {users} from "../../db.json"
-import {users} from "../../static.json"
+import {users} from "../../db.json"
+// import {users} from "../../static.json"
 
 export function UserPicker() {
   const [usersName, setUsers] = useState("Users");
