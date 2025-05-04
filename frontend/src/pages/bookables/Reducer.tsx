@@ -4,6 +4,8 @@ interface Bookable {
   group: string;
   title: string;
   notes: string;
+  // sessions: string;
+  // days: string;
   // ... other properties of your bookable object
 }
 
